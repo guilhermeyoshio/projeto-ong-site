@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONG Socialmente — Nossos Projetos</title>
+    <meta name="description" content="Conheça os projetos de educação, segurança alimentar e desenvolvimento comunitário da ONG Socialmente.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>ONG Socialmente</h1>
+        <nav>
+             <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="sobre.html">Sobre a Organização</a></li>
+                <li><a href="projetos.html">Projetos Sociais</a></li>
+                <li><a href="voluntariado.html">Voluntariado</a></li>
+                <li><a href="doacoes.html">Como Doar</a></li>
+                <li><a href="transparencia.html">Transparência</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="blog.html">Blog/Notícias</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <section>
+                <h2>Nossos Projetos</h2>
+                <p>Acreditamos que a mudança acontece através de ações concretas e contínuas. Conheça abaixo nossas principais frentes de atuação e veja como estamos construindo um futuro melhor.</p>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <picture>
+                            <source type="image/webp" srcset="assets/img/projeto-01.webp">
+                            <img src="assets/img/projeto-01.jpg" alt="Voluntários montando cestas básicas" loading="lazy" decoding="async">
+                        </picture>
+                        <div class="project-card-content">
+                            <h3>Cesta do Bem</h3>
+                            <p>Distribuição mensal de cestas básicas para famílias em situação de vulnerabilidade, garantindo a segurança alimentar e nutricional de centenas de pessoas.</p>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <picture>
+                            <source type="image/webp" srcset="assets/img/projeto-02.webp">
+                            <img src="assets/img/projeto-02.jpg" alt="Crianças em sala de aula recebendo material escolar" loading="lazy" decoding="async">
+                        </picture>
+                        <div class="project-card-content">
+                            <h3>Educação para o Futuro</h3>
+                            <p>Oferecemos aulas de reforço escolar, oficinas de leitura e atividades culturais para crianças e adolescentes, incentivando o aprendizado e o desenvolvimento pessoal.</p>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <picture>
+                            <source type="image/webp" srcset="assets/img/projeto-03.webp">
+                            <img src="assets/img/projeto-03.jpg" alt="Voluntários servindo sopa para pessoas em situação de rua" loading="lazy" decoding="async">
+                        </picture>
+                        <div class="project-card-content">
+                            <h3>Sopão Solidário</h3>
+                            <p>Ações noturnas de distribuição de sopa, agasalhos e kits de higiene para a população em situação de rua, oferecendo um pouco de calor humano e dignidade.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            
+            <section class="light-bg">
+                <h2>Inscreva-se em um Projeto</h2>
+                <p>Quer participar ativamente de uma de nossas iniciativas? Preencha o formulário abaixo para se inscrever!</p>
+                <div class="form-container">
+                    <form action="#" method="post">
+                        <fieldset>
+                            <legend>Formulário de Inscrição</legend>
+                            <div class="form-grid">
+                                <div class="form-group"><label for="fullName">Seu Nome Completo:</label><input type="text" id="fullName" name="nome" required></div>
+                                <div class="form-group"><label for="email">Seu E-mail:</label><input type="email" id="email" name="email" required></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="project-select">Qual projeto deseja participar?</label>
+                                <select id="project-select" name="projeto" required>
+                                    <option value="" disabled selected>-- Escolha um projeto --</option>
+                                    <option value="cesta-bem">Cesta do Bem</option>
+                                    <option value="educacao-futuro">Educação para o Futuro</option>
+                                    <option value="sopao-solidario">Sopão Solidário</option>
+                                </select>
+                            </div>
+                            <div class="form-group"><label for="motivation">Por que você quer participar deste projeto?</label><textarea id="motivation" name="motivacao" rows="5" required placeholder="Conte-nos um pouco sobre sua motivação..."></textarea></div>
+                            <div class="form-group"><label for="experience">Você tem alguma experiência prévia com trabalho voluntário?</label><textarea id="experience" name="experiencia" rows="4" placeholder="Se sim, descreva brevemente..."></textarea></div>
+                            <button type="submit" class="submit-button">Enviar Inscrição</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ONG Socialmente. Todos os direitos reservados.</p>
+        <p>CNPJ: 00.000.000/0001-00</p>
+    </footer>
+</body>
+</html>

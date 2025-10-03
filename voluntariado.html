@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONG Socialmente — Seja um Voluntário</title>
+    <meta name="description" content="Faça parte da nossa equipe de voluntários e ajude a transformar vidas. Cadastre-se agora.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>ONG Socialmente</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="sobre.html">Sobre a Organização</a></li>
+                <li><a href="projetos.html">Projetos Sociais</a></li>
+                <li><a href="voluntariado.html">Voluntariado</a></li>
+                <li><a href="doacoes.html">Como Doar</a></li>
+                <li><a href="transparencia.html">Transparência</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="blog.html">Blog/Notícias</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <section>
+                <h2>Seja um Voluntário</h2>
+                <article>
+                    <h3>Faça a Diferença Conosco</h3>
+                    <p>O trabalho voluntário é a alma da nossa organização. Cada hora doada, cada talento compartilhado, se transforma em esperança e oportunidade para centenas de pessoas. Ao se tornar um voluntário, você não apenas ajuda a comunidade, mas também desenvolve novas habilidades, conhece pessoas incríveis e vive experiências transformadoras.</p>
+                    <h3>Como Funciona?</h3>
+                    <p>Buscamos pessoas comprometidas e apaixonadas de todas as áreas. Após preencher o formulário de cadastro abaixo, nossa equipe de recrutamento entrará em contato para uma conversa inicial e para encontrar o projeto que mais combina com seu perfil e disponibilidade. Junte-se a nós e faça parte desta corrente do bem!</p>
+                </article>
+
+                <div class="form-container">
+                    <form action="#" method="post">
+                        <fieldset>
+                            <legend>Formulário de Cadastro de Voluntário</legend>
+                            <fieldset>
+                                <legend style="font-size: 1.2rem; text-align: left; margin-bottom: 1rem;">Dados Pessoais</legend>
+                                <div class="form-grid">
+                                    <div class="form-group"><label for="fullName">Nome Completo:</label><input type="text" id="fullName" name="nome" required></div>
+                                    <div class="form-group"><label for="birthDate">Data de Nascimento:</label><input type="date" id="birthDate" name="nascimento" required></div>
+                                </div>
+                                <div class="form-group"><label for="cpf">CPF:</label><input type="text" id="cpf" name="cpf" required placeholder="000.000.000-00" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"></div>
+                                <div class="form-grid">
+                                    <div class="form-group"><label for="email">E-mail:</label><input type="email" id="email" name="email" required></div>
+                                    <div class="form-group"><label for="phone">Telefone / WhatsApp:</label><input type="tel" id="phone" name="telefone" required placeholder="(XX) XXXXX-XXXX" pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}"></div>
+                                </div>
+                                <div class="form-group"><label for="cep">CEP:</label><input type="text" id="cep" name="cep" placeholder="00000-000" pattern="\d{5}-\d{3}"></div>
+                            </fieldset>
+                            <fieldset>
+                                <legend style="font-size: 1.2rem; text-align: left; margin-top: 1.5rem; margin-bottom: 1rem;">Habilidades e Interesses</legend>
+                                <div class="form-group">
+                                    <label>Em quais áreas você gostaria de atuar?</label>
+                                    <div class="checkbox-group">
+                                        <label><input type="checkbox" name="areas[]" value="eventos"> Organização de Eventos</label>
+                                        <label><input type="checkbox" name="areas[]" value="administrativo"> Tarefas Administrativas</label>
+                                        <label><input type="checkbox" name="areas[]" value="comunicacao"> Comunicação e Redes Sociais</label>
+                                        <label><input type="checkbox" name="areas[]" value="aulas"> Aulas de Reforço / Oficinas</label>
+                                        <label><input type="checkbox" name="areas[]" value="outra"> Outra</label>
+                                    </div>
+                                </div>
+                                 <div class="form-group"><label for="skills">Descreva brevemente suas habilidades e experiências:</label><textarea id="skills" name="habilidades" rows="4"></textarea></div>
+                            </fieldset>
+                            <fieldset>
+                                <legend style="font-size: 1.2rem; text-align: left; margin-top: 1.5rem; margin-bottom: 1rem;">Disponibilidade</legend>
+                                <div class="form-group">
+                                    <label>Qual período você tem mais disponibilidade?</label>
+                                    <div class="radio-group">
+                                        <label><input type="radio" name="disponibilidade" value="manha"> Manhã</label>
+                                        <label><input type="radio" name="disponibilidade" value="tarde"> Tarde</label>
+                                        <label><input type="radio" name="disponibilidade" value="noite"> Noite</label>
+                                        <label><input type="radio" name="disponibilidade" value="fds"> Fins de Semana</label>
+                                    </div>
+                                </div>
+                                <div class="form-group"><label for="hours">Quantas horas por semana você pode dedicar?</label><input type="number" id="hours" name="horas" min="1" max="20" placeholder="Ex: 4"></div>
+                            </fieldset>
+                            <button type="submit" class="submit-button" style="margin-top: 1.5rem;">Enviar Cadastro</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ONG Socialmente. Todos os direitos reservados.</p>
+        <p>CNPJ: 00.000.000/0001-00</p>
+    </footer>
+</body>
+</html>

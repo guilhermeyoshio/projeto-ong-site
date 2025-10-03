@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONG Socialmente — Início</title>
+    <meta name="description" content="Plataforma de engajamento para a ONG Socialmente. Conheça nossos projetos, seja um voluntário ou faça uma doação.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>ONG Socialmente</h1>
+        <nav>
+            <h2>Menu Principal</h2>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="sobre.html">Sobre a Organização</a></li>
+                <li><a href="projetos.html">Projetos Sociais</a></li>
+                <li><a href="voluntariado.html">Voluntariado</a></li>
+                <li><a href="doacoes.html">Como Doar</a></li>
+                <li><a href="transparencia.html">Transparência</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="blog.html">Blog/Notícias</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="light-bg">
+                <h2>Junte-se a nós na transformação de vidas</h2>
+                <p>Sua ajuda, seja como voluntário ou doador, impulsiona nossos projetos e leva esperança a centenas de famílias.</p>
+            </section>
+
+            <section>
+                <h2>Nossa Missão</h2>
+                <article>
+                    <h3>Missão, Visão e Valores</h3>
+                    <p>Acreditamos no poder da comunidade para gerar impacto social duradouro. Conheça mais sobre nossos pilares e nossa história.</p>
+                    <a href="sobre.html" class="cta-link" style="margin-top: 0;">Conheça nossa história</a>
+                </article>
+            </section>
+
+            <section class="light-bg">
+                <h2>Galeria de Atividades</h2>
+                <p>Um pouco do nosso trabalho em imagens. Veja o impacto direto das doações e do trabalho voluntário.</p>
+                <ul class="gallery-container">
+                    <li><picture><source type="image/webp" srcset="assets/img/galeria-01.webp"><img src="assets/img/galeria-01.jpg" alt="Voluntário com equipamento de proteção entrega cesta básica." loading="lazy" decoding="async"></picture></li>
+                    <li><picture><source type="image/webp" srcset="assets/img/galeria-02.webp"><img src="assets/img/galeria-02.jpg" alt="Voluntários e crianças posam para foto." loading="lazy" decoding="async"></picture></li>
+                    <li><picture><source type="image/webp" srcset="assets/img/galeria-03.webp"><img src="assets/img/galeria-03.jpg" alt="Voluntários montando cestas de alimentos." loading="lazy" decoding="async"></picture></li>
+                    <li><picture><source type="image/webp" srcset="assets/img/galeria-04.webp"><img src="assets/img/galeria-04.jpg" alt="Homem transportando alimentos doados." loading="lazy" decoding="async"></picture></li>
+                    <li><picture><source type="image/webp" srcset="assets/img/galeria-05.webp"><img src="assets/img/galeria-05.jpg" alt="Movimentação de voluntários em evento de doação." loading="lazy" decoding="async"></picture></li>
+                    <li><picture><source type="image/webp" srcset="assets/img/galeria-06.webp"><img src="assets/img/galeria-06.jpg" alt="Fileiras de cestas básicas prontas para distribuição." loading="lazy" decoding="async"></picture></li>
+                </ul>
+                <a href="galeria.html" class="cta-link">Ver Galeria Completa</a>
+            </section>
+            
+            <section>
+                <h2>Mídia e Transparência</h2>
+                <div class="media-charts-grid">
+                    <article>
+                        <h3>Vídeo Institucional</h3>
+                        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DOq2UDgjQPU/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"></blockquote>
+                    </article>
+                    <article>
+                        <h3>Depoimentos que Inspiram</h3>
+                        <p>Ouça a história de quem teve a vida transformada pela nossa ajuda.</p>
+                        <audio controls><source src="assets/audio/depoimento1.mp3" type="audio/mpeg"><p>Seu navegador não suporta áudio HTML5.</p></audio>
+                    </article>
+                    <article>
+                        <h3>Distribuição de Recursos</h3>
+                        <canvas id="chart-resources" width="400" height="250">Gráfico de pizza.</canvas>
+                    </article>
+                    <article>
+                        <h3>Evolução de Voluntários</h3>
+                        <canvas id="chart-volunteers" width="400" height="250">Gráfico de linha.</canvas>
+                    </article>
+                    <article>
+                        <h3>Impacto Social por Região</h3>
+                        <canvas id="chart-impact" width="400" height="250">Gráfico de barras.</canvas>
+                    </article>
+                </div>
+            </section>
+
+            <section>
+                <h2>Fique por Dentro</h2>
+                <p>Assine nossa newsletter para receber notícias e saber como ajudar.</p>
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Inscrição na Newsletter</legend>
+                        <div><label for="newsletter-name">Seu nome:</label><input type="text" id="newsletter-name" name="nome" required></div>
+                        <div><label for="newsletter-email">Seu e-mail:</label><input type="email" id="newsletter-email" name="email" required placeholder="exemplo@email.com"></div>
+                        <button type="submit">Inscrever</button>
+                    </fieldset>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ONG Socialmente. Todos os direitos reservados.</p>
+        <p>CNPJ: 00.000.000/0001-00</p>
+    </footer>
+
+    <script src="assets/js/charts.js"></script>
+    <script async src="//www.instagram.com/embed.js"></script>
+</body>
+</html>
