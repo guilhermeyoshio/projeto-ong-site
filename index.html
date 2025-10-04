@@ -63,7 +63,7 @@
     <div class="media-charts-grid">
         <article>
             <h3>Vídeo Institucional</h3>
-            <video controls width="100%">
+            <video controls >
                 <source src="assets/videos/Entrega-de-Alimentos-ONG-Institucional.mp4" type="video/mp4">
                 <p>Seu navegador não suporta o formato de vídeo.</p>
             </video>
@@ -87,28 +87,30 @@
             <h3>Impacto Social por Região</h3>
             <canvas id="chart-impact" width="400" height="250">Gráfico de barras.</canvas>
         </article>
-    </div>
-</section><section>
-    <h2>Fique por Dentro</h2>
-    <p>Assine nossa newsletter para receber notícias e saber como ajudar.</p>
-    <form action="#" method="post">
-        <fieldset>
-            <legend>Inscrição na Newsletter</legend>
-            <div><label for="newsletter-name">Seu nome:</label><input type="text" id="newsletter-name" name="nome" required></div>
-            <div><label for="newsletter-email">Seu e-mail:</label><input type="email" id="newsletter-email" name="email" required placeholder="exemplo@email.com"></div>
-            <div class="form-group">
-                <label>Quais conteúdos te interessam?</label>
-                <div class="checkbox-group">
-                    <label><input type="checkbox" name="preferencias[]" value="noticias"> Notícias e Eventos</label>
-                    <label><input type="checkbox" name="preferencias[]" value="historias"> Histórias de Impacto</label>
-                    <label><input type="checkbox" name="preferencias[]" value="financas"> Transparência e Finanças</label>
+</div>
+    </section> <section> <h2>Fique por Dentro</h2>
+        <p>Assine nossa newsletter para receber notícias e saber como ajudar.</p>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Inscrição na Newsletter</legend>
+                <div><label for="newsletter-name">Seu nome:</label><input type="text" id="newsletter-name" name="nome" required></div>
+                <div><label for="newsletter-email">Seu e-mail:</label><input type="email" id="newsletter-email" name="email" required placeholder="exemplo@email.com"></div>
+                <div class="form-group">
+                    <label>Quais conteúdos te interessam?</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="preferencias[]" value="noticias"> Notícias e Eventos</label>
+                        <label><input type="checkbox" name="preferencias[]" value="historias"> Histórias de Impacto</label>
+                        <label><input type="checkbox" name="preferencias[]" value="financas"> Transparência e Finanças</label>
+                    </div>
                 </div>
-            </div>
-            <button type="submit">Inscrever</button>
-        </fieldset>
-    </form>
-</section>            </section>
-        </div>
+                <button type="submit">Inscrever</button>
+            </fieldset>
+        </form>
+    </section> ```
+
+Isso vai garantir que a seção anterior (dos gráficos) se feche corretamente antes de abrir a nova seção (do formulário).
+
+Depois de colar, salva e testa no validador de novo. Agora tenho quase certeza que vai dar 100%! Me fala o resultado!        </div>
     </main>
 
     <footer>
@@ -119,7 +121,3 @@
     <script src="assets/js/charts.js"></script>
 </body>
 </html>
-<audio controls>
-  <source src="assets/audio/depoimento1.mp3" type="audio/mp3">
-  Seu navegador não suporta o elemento de áudio.
-</audio>

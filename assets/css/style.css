@@ -27,7 +27,7 @@ footer { text-align: center; padding: 2rem; background: #012a4a; color: #fff; }
 
 .media-charts-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; }
 .media-charts-grid article { padding: 1.5rem; background: #fff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); display: flex; flex-direction: column; justify-content: center; }
-audio, canvas { max-width: 100%; border-radius: 8px; }
+video, audio, canvas { max-width: 100%; border-radius: 8px; }
 
 .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem; }
 .project-card { background: #fff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); overflow: hidden; text-align: left; transition: transform 0.3s, box-shadow 0.3s; }
