@@ -74,7 +74,7 @@ legend { font-size: 1.8rem; font-weight: bold; margin-bottom: 1.5rem; color: #01
 /* Layout da seção de Mídia e Transparência */
 .media-charts-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem; /* Espaçamento entre os itens */
     margin-top: 2rem; /* Espaçamento do título da seção */
     text-align: center;
